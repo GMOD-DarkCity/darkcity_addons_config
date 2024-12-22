@@ -1,0 +1,36 @@
+name: Deploy Addon to Production Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+   
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0  
+
+
+    - name: Create SFTP script
+      env:
+        CONFIG_FILES: ${{ vars.CONFIG_FILES }}
+        PATH_TARGET: ${{ vars.PATH_TARGET }}
+      run: |
+        echo "put $CONFIG_FILE $ADDON_TARGET" > sftp_commands.txt
+
+    - name: Upload file via SFTP
+      uses: milanmk/actions-file-deployer@master
+      with:
+        remote-protocol: sftp
+        remote-host: ${{ vars.SFTP_HOST }}
+        remote-user: ${{ secrets.SFTP_USERNAME }}
+        remote-password: ${{ secrets.SFTP_PASSWORD }}
+        remote-path: ${{ vars.PATH_TARGET }}
+        remote-port: ${{ vars.SFTP_PORT }}
