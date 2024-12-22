@@ -190,7 +190,7 @@ local donationRanks = {
         category = "Métiers Légaux",
     
     })
-    
+  /*  
     TEAM_SDF = DarkRP.createJob("SDF", {
         color = Color(0, 161, 255, 0),
         model = {
@@ -214,7 +214,7 @@ local donationRanks = {
         category = "Métiers Légaux",
     
     })
-    
+    */
     
     TEAM_BITMINEUR = DarkRP.createJob("Bitmineur", {
         color = Color(0, 161, 255, 0),
