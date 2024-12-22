@@ -58,18 +58,7 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Citoyen légal
-        Arme(s) autorisées : Toutes les armes (en possession d'une licence pour le type d'armes équipée)
-    
-        - Peut inventer un RP tant qu'il respecte les règles du serveur
-        - Il est interdit de faire un RP de type "enfant".
-    
-        Citoyen illégal
-        Arme(s) autorisées : Toutes les armes
-    
-        - Peut participer à tout type d’actions illégales
-        - Si il travaille pour un maire en dictature et qu'il meurt, il n'a plus le droit de travailler pour ce même maire pendant sa dictature (même si il est réanimé)
-        - Il est interdit de faire un RP de type "enfant".
+        Est une personne banalle qui n'a pas d'emploie
         ]],
         weapons = {},
         command = "Citoyen",
@@ -114,18 +103,12 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
     },
         description = [[
-        Arme(s) autorisées : Arme de poings légales
-    
-    
-        - Peut engager une sécurité
-        - Peut printer dans la banque
-        - Doit travailler dans une banque et pas ailleurs
-        - Ne peut pas prendre une taxe supérieur à 25% pour sa clientèle.
+        Il s'occupe d'une bank, auquelle il dirige ou il y travaille
         ]],
         weapons = {},
         command = "banquier",
         max = 3,
-        salary = 5,
+        salary = 25,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -149,16 +132,12 @@ local donationRanks = {
         "models/kerry/player/merriweather/male_09.mdl",
                 },
         description = [[
-        Arme(s) autorisées : Toutes les armes légales sauf sniper
-    
-        - Ne peut travailler que pour des métiers légaux.
-        - Ne peut être embauché par plusieurs personnes
-        - Ne peut pas travailler pour le Maire
+        Est embauché afin de sécurisé un client ou une cliente.
         ]],
         weapons = {"weapon_rpt_stungun","weapon_rpt_handcuff",},
         command = "gardeducorps",
-        max = 5,
-        salary = 0,
+        max = 2,
+        salary = 15,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -245,17 +224,12 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Arme de poings légales
-    
-        - Peut engager une sécurité
-        - Peut printer dans la banque
-        - Doit travailler dans une banque et pas ailleurs
-        - Ne peut pas prendre une taxe supérieur à 25% pour sa clientèle.
+        Est une personne banal, avec la particulité de faire du minage de Bitcoin
         ]],
         weapons = {"ch_bitminers_tablet","ch_bitminers_repair_wrench"},
         command = "bitmineur",
-        max = 3,
-        salary = 20,
+        max = 2,
+        salary = 0,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -292,14 +266,11 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : arme de poings légale
-    
-        - Peut engager une sécurité
-        - La musique diffusée doit être non choquante/violente ou tout autre contenu susceptible de vexer ou de créer une politique.
+        Est un personne banale qui entretien une radio.
         ]],
         weapons = {},
         command = "aniamteur",
-        max = 3,
+        max = 2,
         salary = 5,
         admin = 0,
         vote = false,
@@ -338,15 +309,12 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
     },
         description = [[
-        Arme(s) autorisées : Arme de poings légales
-    
-        - Doit vendre des voitures au concessionnaire
-        - Ne peut pas rejoindre un groupe
+        Est une personne lancé dans un commerce automobile sérieux.
         ]],
         weapons = {},
         command = "cardealeur",
         max = 2,
-        salary = 20,
+        salary = 15,
         admin = 0,
         vote = false,
         category = "Vendeurs",
@@ -360,18 +328,13 @@ local donationRanks = {
         "models/ecott/chefcitizen.mdl",
         },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Doit obligatoirement posséder un magasin en centre ville ou aller au Diner
-        - Doit vendre obligatoirement de la nourriture à ceux qui payent
-        - Peut fixer ses prix tant qu’ils ne sont pas excessifs, interdiction de dépasser 1500€ pour un repas. 
-        - Ne peut pas rejoindre un groupe, doit travailler seul ou avec un autre cuisinier et être disponible pour l'ensemble des citoyens
+        Est instalé dans une structure ou non et prépare et vend ses plats.
         ]],
             weapons = {},
             command = "cook",
           category = "Vendeurs",
             max = 3,
-            salary = 45,
+            salary = 15,
             admin = 0,
             vote = false,
             hasLicense = false,
@@ -508,15 +471,7 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Arme de poings
-    
-        - Peut vendre à la sauvette
-        - Peut vendre les armes pour maximum de 2 fois le prix d’achat.
-        - N’a pas le droit de vendre à perte
-        - Peut créer un magasin de couverture pour son business (exemple : “Magasin de jouets, venez acheter des jouets de qualité !”)
-        - Ne peut pas rejoindre un groupe, doit travailler seul ou avec un autre marchand noir
-        - Ne peut pas participer à une action telle qu'un braquage / un racket / un cambriolage etc
-        - Interdiction d'acheter quoique ça soit pour lui même
+        Est une personne banale qui a un stocke de marchandise "trouble"
         ]],
         weapons = {},
         command = "marchand_noire",
@@ -556,14 +511,7 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Sniper et arme de poings
-    
-        - N’a pas le droit d’accepter des contrats invalides (exemples de contrats valides : trahison de famille, concurrence etc)
-        - N’a pas le droit de tuer sans contrats
-        - Doit tuer ses victimes discrètement à l’abris des regards
-        - Ne peut pas participer à une action telle qu'un braquage / un racket / un cambriolage etc
-        - Peut s'allier à un citoyen ou un membre de famille pour son contrat mais le tueur à gage doit tuer la cible.
-        - Le tueur et son client peuvent métagaming pour obtenir le nom de la victime
+        Est un citoyen banale avec la particulité d'avoir des contrats sur des personnes qui doit neutralisé afin d'être payer
         ]],
         weapons = {"arccw_firearms2_scout","arccw_firearms2_pmm","slownls_hitman_tablet","slownls_hitman_binoculars"},
         command = "hitman",
@@ -603,11 +551,7 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Toutes armes sauf sniper
-    
-        - Doit fabriquer à l’abris de regards dans une propriété achetée
-        - Peut s’allier avec un gang
-        - Ne peut pas participer à une action telle qu'un braquage / un racket / un cambriolage etc
+        Est un citoyen banale qui produit des plantes
         ]],
         weapons = {"zgo2_multitool","zgo2_backpack"},
         command = "weed",
@@ -648,11 +592,7 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Toutes armes sauf sniper
-    
-        - Doit fabriquer à l’abris de regards dans une propriété achetée
-        - Peut s’allier avec un gang
-        - Ne peut pas participer à une action telle qu'un braquage / un racket / un cambriolage etc  
+        Est un citoyen banale qui produit des plantes
         ]],
         weapons = {"zgo2_multitool","zgo2_backpack"},
         command = "weedpro",
@@ -693,11 +633,7 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Toutes armes sauf sniper
-    
-        - Doit fabriquer à l’abris de regards dans une propriété achetée
-        - Peut s’allier avec un gang
-        - Ne peut pas participer à une action telle qu'un braquage / un racket / un cambriolage etc
+        Est un citoyen banale qui produit des plantes
         ]],
         weapons = {},
         command = "meth",
@@ -738,15 +674,11 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Toutes armes sauf sniper
-    
-        - Doit fabriquer à l’abris de regards dans une propriété achetée
-        - Peut s’allier avec un gang
-        - Ne peut pas participer à une action telle qu'un braquage / un racket / un cambriolage etc
+        Est un citoyen banale qui produit des feux d'artifice
         ]],
         weapons = {},
         command = "firework",
-        max = 4,
+        max = 2,
         salary = 0,
         admin = 0,
         vote = false,
@@ -772,16 +704,12 @@ local donationRanks = {
     "models/gta5/fire7.mdl",
     },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Est obligé d'éteindre les feux
-        - Ne peut pas participer a des actions illégales
-        - Ne peut pas demander de l'argent après avoir éteint un feu
+        Défend ces citoyens face aux flammes.
         ]],
         weapons = {"fire_extinguisher", "fire_axe"},
         command = "pompier",
         category = "Services publics de la Ville",
-        max = 4,
+        max = 6,
         salary = 45,
         admin = 0,
         vote = false,
@@ -816,17 +744,13 @@ local donationRanks = {
     "models/citizens/pavka/male_11.mdl",
     },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Ne peut pas facturer plus de 1500$ la course
-        - Ne peut pas participer à des actions illégales
-        - Doit donner le prix de la course avant de conduire le client.
+        Est au service de clients, ils les transportent d'un point A a un point B a ces tarifs
         ]],
         weapons = {},
         command = "taxi",
         category = "Services publics de la Ville",
         max = 3,
-        salary = 20,
+        salary = 5,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -846,16 +770,13 @@ local donationRanks = {
     "models/brinks/security/guard_brinks_9.mdl",
     },
         description = [[
-        Arme(s) autorisées : Toutes armes légales sauf sniper
-    
-        - Peut engager une sécurité
-        - Est obligé de rester dans la légalité
+        Transporte de grosse somme auquelle il doit accomplir sont devoir qui est de protéger celle-ci tout en les transportants en lieux sur.
         ]],
         weapons = {},
         command = "cdf",
         category = "Services publics de la Ville",
         max = 3,
-        salary = 45,
+        salary = 40,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -875,20 +796,12 @@ local donationRanks = {
     "models/worker2/mechanic_09.mdl",
         },
         description = [[
-        Arme(s) autorisées : Aucune arme
-    
-        - Doit obligatoirement réparer un véhicule qu’il emmène au garage pour l’amender
-        - Doit obligatoirement utiliser son véhicule de fonction
-        - Pour une simple réparation, le prix maximum autorisé est de 1500$
-        - Pour le remorquage d’un véhicule mal garé le prix maximum doit être le prix de la réparation + 1500$.
-        - Interdiction de remorquer un véhicule bien garé / avec les gyrophares allumés / qui participe à une action RP telle que braquage de banque, prise d’otage etc...
-        - Peut propsblock le PNJ de réparation lorsqu'il est présent dans son garage. 
-        - Il est interdit de prendre un véhicule en remorquage en étant en train de rouler
+        Il répare et dépanne les gens dans le besoin.
         ]],
         weapons = {"vc_wrench"},
         command = "garagiste",
         max = 2,
-        salary = 50,
+        salary = 20,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -911,17 +824,12 @@ local donationRanks = {
             "models/worker2/dock_worker_11.mdl",
         },
         description = [[
-        Arme(s) autorisées : Aucune arme
-    
-        - Ne peut pas participer à des actions illégales
-        - Doit réparer les caméras
-        - Ne peut pas casser des caméras.
-    
+        Répare les caméras de la police qui sont cassée
         ]],
         weapons = {"weapon_rpt_wrench"},
         command = "repcam",
         max = 2,
-        salary = 25,
+        salary = 5,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -949,17 +857,11 @@ local donationRanks = {
             "models/player/kerry/medic/medic_07.mdl"
         },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Doit obligatoirement se déplacer si il est appelé.
-        - Peut faire payer ses soins 1000$ maximum
-        - Doit rouler uniquement avec son véhicule de fonction
-        - Ne peut pas soigner ou réanimer au milieu d'un gunfight (NoFearRP). Vous pouvez néanmoins vous tenir à disposition des forces de l'ordre sur une action pour les soigner entre les Gunfight.
-        - Est obligé de soigner si la personne le demande. Est également obligé de réanimer les gens à terre.
+        Soigne des vies, il sert son pays.
         ]],
         weapons = {"weapon_medkit","analysis_notebook"},
         command = "ambulancier",
-        max = 2,
+        max = 4,
         salary = 25,
         admin = 0,
         vote = false,
@@ -987,16 +889,12 @@ local donationRanks = {
             "models/player/kerry/medic/medic_07.mdl"
         },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Peut faire payer ses soins 5000$ maximum
-        - Ne peut pas soigner ou réanimer au milieu d'un gunfight (NoFearRP). Vous pouvez néanmoins vous tenir à disposition des forces de l'ordre sur une action pour les soigner entre les Gunfight.
-        - Est obligé de soigner si la personne le demande. Est également obligé de réanimer les gens à terre.
+        Sauve des vies.
         ]],
         weapons = {"weapon_medkit","analysis_notebook"},
         command = "medic",
-        max = 4,
-        salary = 25,
+        max = 6,
+        salary = 55,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -1023,16 +921,12 @@ local donationRanks = {
             "models/player/kerry/medic/medic_07.mdl"
         },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Peut faire payer ses soins 5000$ maximum
-        - Ne peut pas soigner ou réanimer au milieu d'un gunfight (NoFearRP). Vous pouvez néanmoins vous tenir à disposition des forces de l'ordre sur une action pour les soigner entre les Gunfight.
-        - Est obligé de soigner si la personne le demande. Est également obligé de réanimer les gens à terre.
+        Soigne des vies, il sert son pays.
         ]],
         weapons = {"weapon_medkit","analysis_notebook"},
         command = "docteur",
-        max = 1,
-        salary = 100,
+        max = 4,
+        salary = 20,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -1061,17 +955,13 @@ local donationRanks = {
     "models/player/suits/male_09_closed_coat_tie.mdl",
     },
         description = [[
-        Arme(s) autorisées : Aucune
-    
-        - Doit juger de manière neutre
-        - Est obligé de faire son métier
-        - Ne peut pas être corrompu
+        Applique la loi, applique la justice.
         ]],
         weapons = {},
         command = "juge",
         category = "Gouvernement",
         max = 1,
-        salary = 45,
+        salary = 120,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -1092,15 +982,12 @@ local donationRanks = {
     
                 },
         description = [[
-        Arme(s) autorisées : Toutes les armes légales sauf sniper (+ armes illégales si dictature)
-    
-        - Est obligé de travailler pour le Gouverneur
-        - Si le Gouverneur est en dictature, il ne peut pas retravailler pour lui à sa mort et doit changer de job
+        Assure la sécurité du Gouverneur de l'état
         ]],
         weapons = {"weapon_rpt_stungun","weapon_rpt_handcuff"},
         command = "gardedumaire",
-        max = 8,
-        salary = 0,
+        max = 5,
+        salary = 30,
         admin = 0,
         vote = false,
         hasLicense = false,
@@ -1118,39 +1005,12 @@ local donationRanks = {
         color = Color(0, 161, 255, 0),
         model = "models/player/breen.mdl",
         description = [[
-        Gouverneur en démocratie
-        Arme(s) autorisées : Arme de poings
-    
-        - Ne peut pas avoir plus de 6 personnes travaillant à son services (gardes + gang / famille)
-        - Ne peut que engager des gardes du Gouverneur, interdiction de faire appel à une sécurité privée dans l'absence d'une dictature.
-        - Ne peut pas sortir dans la rue sans raison valable ou non accompagné de ses gardes du corps.
-        - Peut fixer des lois en accord avec le règlement du serveur (Attention : Le Staff se réserve le droit d’intervenir)
-        - Peut renvoyer ses gardes si il le souhaite.
-        - Peut mettre les taxes entre 0 et 50%.
-        - Possède une immunité de 10 minutes après son élection (ne peut pas être pris en otage pendant ce temps). S'il décide de lancer une dictature avant la fin de cette immunité, elle est donc annulée. 
-        - Si les forces de l'ordre le demande et que les fonds de la ville sont suffisants, il est obligé de payer la rançon d'une prise d'otage.
-    
-        Gouverneur en dictature    
-        Arme(s) autorisées : Toutes les armes
-    
-        - Ne peut pas avoir plus de 6 personnes travaillant à son services (gardes + gang / famille)
-        - Doit faire valider ses lois et sa dictature par un Staff avant de pouvoir la lancer.
-        - Peut engager des groupes armés en plus de ses gardes (uniquement citoyens et familles).
-        - Peut renvoyer ses gardes si il le souhaite.
-        - Peut faire des printer avec ses gardes.
-        - Peut mettre les taxes entre 0 et 100%
-        - Peut uniquement sortir de la mairie pour aller acheter de la nourriture / des armes etc ... ou si sa vie est directement en danger. 
-        - Dans le cadre d'une dictature le Gouverneur ne peut pas se permettre de légaliser la meth, les printers et la cocaine ni de faire / participer / ou faire participer des personnes travaillant pour lui à des actions illégales telles qu'une prise d'otage, un braquage de banque ect .... Il n'a également pas le droit d'ordonner un Freekill ou un Freeshot. Enfin, dans le cadre d'un couvre feu, il ne peut pas ordonner une purge ou le tir à vue sur les civils qui ne rentrent pas chez eux (une sommation claire doit être faite)
-        - Toute personne travaillant pour le Gouverneur n'a pas le droit de voler dans les printers d'une personne travaillant pour le maire ou le maire en lui même.
-        - Peut faire appel à des métiers illégaux (marchands noirs etc...)
-        - Si les forces de l'ordre le demande, il n'est pas obligé de payer la rançon d'une prise d'otage
-        - N'a pas le droit d'intervenir dans une action de la Gendarmerie en tant que renfort ou faire intervenir les personnes travaillant pour lui dans une action en renfort de la Gendarmerie. 
-    
+        Gouverneur, il représente notre état, Il peut avoir des alliées ou des énnemies politique.
         ]],
         weapons = {"weapon_rpt_stungun","weapon_rpt_handcuff","dradio"},
         command = "mayor",
         max = 1,
-        salary = 100,
+        salary = 160,
         admin = 0,
         vote = true,
         hasLicense = false,
@@ -1182,11 +1042,11 @@ local donationRanks = {
             "models/malory/bcso/patrol/male_02.mdl",
             "models/malory/bcso/patrol/male_01.mdl",
         },
-        description = [[NYPD. Patrouille, enquête, protège]],
+        description = [[Assure la sécurité de notre pays]],
         weapons = {"stunstick","weapon_rpt_finebook","weapon_rpt_handcuff","weapon_rpt_stungun","dradio","emergencyresponse_walkietalkie"},    
         command = "cadet",
         max = 3,
-        salary = 50,
+        salary = 25,
         admin = 0,
         vote = false,
         hasLicense = true,
@@ -1210,11 +1070,11 @@ local donationRanks = {
             "models/malory/bcso/patrol/male_02.mdl",
             "models/malory/bcso/patrol/male_01.mdl",
         },
-        description = [[NYPD. Patrouille, enquête, protège]],
+        description = [[Assure la sécurité de notre pays]],
         weapons = {"stunstick","weapon_rpt_finebook","weapon_rpt_handcuff","weapon_rpt_stungun","dradio","emergencyresponse_walkietalkie","door_ram"},    
         command = "police",
-        max = 8,
-        salary = 50,
+        max = 10,
+        salary = 60,
         admin = 0,
         vote = false,
         hasLicense = true,
@@ -1237,11 +1097,11 @@ local donationRanks = {
             "models/malory/bcso/patrol/male_02.mdl",
             "models/malory/bcso/patrol/male_01.mdl",
         },
-        description = [[Élite anti-criminalité, tactique et sérieux. Gilet pare-balles, armes lourdes, et un goût prononcé pour l'action musclée.]],
+        description = [[ Assure la sécurité de notre pays.]],
         weapons = {"stunstick","weapon_rpt_finebook","weapon_rpt_handcuff","weapon_rpt_stungun","dradio","emergencyresponse_walkietalkie","door_ram"},    
         command = "ecu",
         max = 8,
-        salary = 50,
+        salary = 60,
         admin = 0,
         vote = false,
         hasLicense = true,
@@ -1263,11 +1123,11 @@ local donationRanks = {
             "models/malory/bcso/patrol/male_02.mdl",
             "models/malory/bcso/patrol/male_01.mdl",
         },
-        description = [[NYPD. Patrouille, enquête, protège]],
+        description = [[ Assure la sécurité de notre pays]],
         weapons = {"stunstick","weapon_rpt_finebook","weapon_rpt_handcuff","weapon_rpt_stungun","dradio","emergencyresponse_walkietalkie"},    
         command = "SCU",
-        max = 2,
-        salary = 50,
+        max = 3,
+        salary = 45,
         admin = 0,
         vote = false,
         hasLicense = true,
@@ -1279,7 +1139,7 @@ local donationRanks = {
         model = {
         "models/lb/gtacityrp/bcmpd_police_dog.mdl",
         },
-        description = [[]],
+        description = [[Wouaff Wouaff]],
         weapons = {"weapon_pet"},    
         command = "dogpl",
         max = 2,
