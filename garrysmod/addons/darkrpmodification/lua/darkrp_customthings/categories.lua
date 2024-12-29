@@ -82,6 +82,23 @@ DarkRP.createCategory{
     canSee = fp{fn.Id, true},
     sortOrder = 105,
 }
+DarkRP.createCategory{
+    name = "Staff",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 106,
+}
+DarkRP.createCategory{
+    name = "Forces de l'Ordre",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 105,
+}
+
 
 
 ------------------------------------------------------------------------
