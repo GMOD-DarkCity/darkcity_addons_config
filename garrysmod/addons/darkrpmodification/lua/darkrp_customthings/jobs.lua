@@ -1248,7 +1248,7 @@ TEAM_STAFF = DarkRP.createJob("Staff En Service", {
     candemote = false,
     category = "Staff",
     customCheck = function(ply) return CLIENT or
-        table.HasValue({"superadmin","admin","Super-Admin", "Administrateur", "Animateur", "Modo", "Modeo-Test"}, ply:GetNWString("usergroup"))
+        table.HasValue({"superadmin","admin","Super-Admin", "Administrateur", "Animateur", "Modo", "Modo-Test"}, ply:GetNWString("usergroup"))
     end,
     CustomCheckFailMsg = "Tu n'es pas membre de l'équipe, l'accès t'est donc refusé."
 })

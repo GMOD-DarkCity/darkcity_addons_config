@@ -15,11 +15,4 @@ DarkRP.createDemoteGroup("Name of the group", {TEAM1, TEAM2})
 -- Example: DarkRP.createDemoteGroup("Cops", {TEAM_DEPUTY, TEAM_CHIEF})
 -- Example: DarkRP.createDemoteGroup("Gangsters", {TEAM_GANG, TEAM_MOB})
 
-DarkRP.createDemoteGroup("Police", {TEAM_DEPUTY, TEAM_SHERIFF})
-
---[[
-    hôpital  - Door Group
-    Generated using: DarkRP | Door Group Generator
-    https://yourdevtools.com/gmod/darkrp-doorgroup
---]]
 
