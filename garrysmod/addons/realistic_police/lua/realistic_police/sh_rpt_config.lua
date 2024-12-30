@@ -32,7 +32,7 @@ Realistic_Police.KeyOpenTablet = KEY_I -- Key for open the tablet into a vehicle
 
 Realistic_Police.WantedMessage = "Rechercher par le PC" -- Message when you wanted someone with the computer 
 
-Realistic_Police.StungunAmmo = 40 
+Realistic_Police.StungunAmmo = 100
 
 Realistic_Police.CanConfiscateWeapon = true -- If the functionality for confiscate is activate or desactivate
 
@@ -107,7 +107,7 @@ Realistic_Police.RankCanAccessComputer = {
 
 Realistic_Police.MaxReport = 10 -- Max report per persson
 
-Realistic_Police.MaxCriminalRecord = 30 -- Max Criminal Record per persson 
+Realistic_Police.MaxCriminalRecord = 100 -- Max Criminal Record per persson 
 
 Realistic_Police.Application[1] = { -- Unique Id 
     ["Name"] = "Internet", -- Name of the Application 
@@ -145,7 +145,7 @@ Realistic_Police.Application[5] = { -- Unique Id
 }
 
 Realistic_Police.Application[6] = { -- Unique Id 
-    ["Name"] = "Plaque d'immatriculation", -- Name of the Application  
+    ["Name"] = "Check Plate", -- Name of the Application  
     ["Materials"] = Material("rpt_listreport.png"), -- Material of the Application  
     ["Function"] = Realistic_Police.License, -- Function Application 
     ["Type"] = "police",  
@@ -170,12 +170,12 @@ Realistic_Police.PlateConfig["us"] = {
     ["Image"] = Material("rpt_plate_us.png"), -- Policekground of the plate 
     ["ImageServer"] = nil, -- Image server or Image of the department 
     ["TextColor"] = Color(24, 55, 66), -- Color Text of the plate 
-    ["Country"] = "NEW YORK", -- Country Name 
+    ["Country"] = "TENNESSEE", -- Country Name 
     ["CountryPos"] = {2, 5}, -- The pos of the text 
     ["CountryColor"] = Color(26, 134, 185), -- Color of the country text 
     ["Department"] = "",  
     ["PlatePos"] = {2, 1.5}, -- Plate Pos 
-    ["PlateText"] = false, -- AABCDAA
+    ["PlateText"] = true, -- AABCDAA
 }
 
 Realistic_Police.PlateConfig["eu"] = { 
@@ -187,7 +187,7 @@ Realistic_Police.PlateConfig["eu"] = {
     ["CountryColor"] = Color(255, 255, 255), -- Color of the country text 
     ["Department"] = "77", -- Department 
     ["PlatePos"] = {2, 2}, -- Plate Pos 
-    ["PlateText"] = true, -- AA-BCD-AA
+    ["PlateText"] = false, -- AA-BCD-AA
 }
 
 Realistic_Police.PlateVehicle["crsk_alfaromeo_8cspider"] = "us" 
@@ -259,16 +259,16 @@ Realistic_Police.SurrenderKey = KEY_J -- The key for surrender
 
 Realistic_Police.SurrenderInfoKey = "J" -- The Key 
 
-Realistic_Police.SurrenderActivate = true 
+Realistic_Police.SurrenderActivate = false 
 
 Realistic_Police.CanCuff = { -- Job which can arrest someone
     ["SRT"] = true,
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true,
-    ["Maire"] = true,
+    ["Maire"] = false,
     ["Garde du maire"] = true,
-    ["Garde du corps"] = true
+    ["Garde du corps"] = false
 }
  
 Realistic_Police.CantBeCuff = { -- Job which can't be cuff
@@ -295,18 +295,18 @@ Realistic_Police.CantBeStun = { -- Job which can't be cuff
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true,
-    ["Maire"] = true,
+    ["Maire"] = false,
 }
 
 -----------------------------------------------------------------------------
 --------------------------- Camera Configuration-----------------------------
 -----------------------------------------------------------------------------
 
-Realistic_Police.CameraHealth = 50 -- Health of the Camera 
+Realistic_Police.CameraHealth = 80 -- Health of the Camera 
 
 Realistic_Police.CameraRestart = 60 -- Camera restart when they don't have humans for repair 
 
-Realistic_Police.CameraRepairTimer = 10 -- Time to repair the camera 10s 
+Realistic_Police.CameraRepairTimer = 20 -- Time to repair the camera 10s 
 
 Realistic_Police.CameraBrokeHud = false -- If when a camera was broken the Camera Worker have a Popup on his screen 
 
@@ -316,7 +316,7 @@ Realistic_Police.CameraWorker = { -- Job which can repair the camera
     ["Réparateur de caméra"] = true, 
 }
 
-Realistic_Police.CameraGiveMoney = 2500 -- Money give when a player repair a camera 
+Realistic_Police.CameraGiveMoney = 15 -- Money give when a player repair a camera 
 
 -----------------------------------------------------------------------------
 --------------------------- Report Configuration-----------------------------
@@ -327,7 +327,7 @@ Realistic_Police.JobDeleteReport = { -- Which job can delete Report
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true,
-    ["Maire"] = true,
+    ["Maire"] = false,
 
 }
 
@@ -336,7 +336,7 @@ Realistic_Police.JobEditReport = { -- Which job can create / edit report
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true,
-    ["Maire"] = true,
+    ["Maire"] = false,
 }
 
 -----------------------------------------------------------------------------
@@ -348,7 +348,7 @@ Realistic_Police.JobDeleteRecord = { -- Which job can delete Criminal Record
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true,
-    ["Maire"] = true,
+    ["Maire"] = false,
 
 }
 
@@ -357,7 +357,7 @@ Realistic_Police.JobEditRecord = { -- Which job can create / edit Criminal Recor
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true, 
-    ["Maire"] = true,
+    ["Maire"] = false,
 
 }
 
@@ -365,11 +365,11 @@ Realistic_Police.JobEditRecord = { -- Which job can create / edit Criminal Recor
 ---------------------------- Fining System ----------------------------------
 -----------------------------------------------------------------------------
 
-Realistic_Police.PlayerWanted = true -- if the player is wanted when he doesn't pay the fine 
+Realistic_Police.PlayerWanted = false -- if the player is wanted when he doesn't pay the fine 
 
-Realistic_Police.PourcentPay = 50 -- The amount pourcent which are give when the player pay the fine 
+Realistic_Police.PourcentPay = 0 -- The amount pourcent which are give when the player pay the fine 
 
-Realistic_Police.MaxPenalty = 20 -- Maxe Penalty on the same player 
+Realistic_Police.MaxPenalty = 60 -- Maxe Penalty on the same player 
 
 Realistic_Police.JobCanAddFine = { -- Which job can add fine
     ["SRT"] = true,
@@ -383,7 +383,7 @@ Realistic_Police.JobCantHaveFine = { -- Which job can't receive fine
     ["Deputy Sheriff"] = true,
     ["Deputy Trainee"] = true,
     ["SCU"] = true,
-    ["Maire"] = true,
+    ["Maire"] = false,
 
 }
 
@@ -777,12 +777,12 @@ Realistic_Police.FiningPolice[57] = {
 
 Realistic_Police.NameOs = "WOINDOZ" -- The name of the os 
 
-Realistic_Police.ResolveHack = 120 -- Time which the computer will be repair 
+Realistic_Police.ResolveHack = 150 -- Time which the computer will be repair 
 
 Realistic_Police.WordCount = 10 -- How many word the people have to write for hack the computer
 
 Realistic_Police.HackerJob = { -- Which are not able to use the computer without hack the computer 
-    ["Citoyen"] = true,  
+    ["Citoyen"] = false,  
 }
 
 Realistic_Police.WordHack = { -- Random Word for hack the computer 
