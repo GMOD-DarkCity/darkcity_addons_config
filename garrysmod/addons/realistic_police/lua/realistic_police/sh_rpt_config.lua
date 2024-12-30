@@ -32,13 +32,13 @@ Realistic_Police.KeyOpenTablet = KEY_I -- Key for open the tablet into a vehicle
 
 Realistic_Police.WantedMessage = "Rechercher par le PC" -- Message when you wanted someone with the computer 
 
-Realistic_Police.StungunAmmo = 40 
+Realistic_Police.StungunAmmo = 100
 
 Realistic_Police.CanConfiscateWeapon = true -- If the functionality for confiscate is activate or desactivate
 
 Realistic_Police.UseDefaultArrest = false 
 
-Realistic_Police.UseDarkRPNotify = false -- if you want to use the darkrp notification
+Realistic_Police.UseDarkRPNotify = true -- if you want to use the darkrp notification
 
 Realistic_Police.CameraUpdateRate = 0.5 -- Update rate to optimise caméra
 
@@ -90,15 +90,6 @@ Realistic_Police.PoliceVehicle = { -- Police Vehicle
 Realistic_Police.TrunkPosition["Chevrolet Tahoe - RAID"] = {
     ["Pos"] = Vector(0,0,0),
     ["Ang"] = Angle(0,0,0),
-}
-
-Realistic_Police.RankSystem = false
-
-Realistic_Police.RankCanAccessComputer = {
-    ["SRT"] = true,
-    ["Deputy Sheriff"] = true,
-    ["Deputy Trainee"] = true,
-    ["SCU"] = true,
 }
 
 -----------------------------------------------------------------------------
@@ -170,7 +161,7 @@ Realistic_Police.PlateConfig["us"] = {
     ["Image"] = Material("rpt_plate_us.png"), -- Policekground of the plate 
     ["ImageServer"] = nil, -- Image server or Image of the department 
     ["TextColor"] = Color(24, 55, 66), -- Color Text of the plate 
-    ["Country"] = "NEW YORK", -- Country Name 
+    ["Country"] = "TENNESSEE", -- Country Name 
     ["CountryPos"] = {2, 5}, -- The pos of the text 
     ["CountryColor"] = Color(26, 134, 185), -- Color of the country text 
     ["Department"] = "",  
@@ -203,11 +194,10 @@ Realistic_Police.KeyForOpenTrunk = KEY_E -- https://wiki.facepunch.com/gmod/Enum
 Realistic_Police.KeyTrunkHUD = true -- Activate/desactivate the hud of the vehicle 
 
 Realistic_Police.CanOpenTrunk = {
-    ["E.S.U"] = true,
-    ["Police"] = true,
-    ["Cadet de Police"] = true,
-    ["ACU"] = true,
-}
+    ["SRT"] = true,
+    ["Deputy Sheriff"] = true,
+    ["Deputy Trainee"] = true,
+    ["SCU"] = true,
 
 Realistic_Police.VehiclePoliceTrunk = {
     ["Airboat"] = true, 
@@ -302,7 +292,7 @@ Realistic_Police.CantBeStun = { -- Job which can't be cuff
 --------------------------- Camera Configuration-----------------------------
 -----------------------------------------------------------------------------
 
-Realistic_Police.CameraHealth = 50 -- Health of the Camera 
+Realistic_Police.CameraHealth = 80 -- Health of the Camera 
 
 Realistic_Police.CameraRestart = 60 -- Camera restart when they don't have humans for repair 
 
@@ -316,7 +306,7 @@ Realistic_Police.CameraWorker = { -- Job which can repair the camera
     ["Réparateur de caméra"] = true, 
 }
 
-Realistic_Police.CameraGiveMoney = 2500 -- Money give when a player repair a camera 
+Realistic_Police.CameraGiveMoney = 800 -- Money give when a player repair a camera 
 
 -----------------------------------------------------------------------------
 --------------------------- Report Configuration-----------------------------
@@ -367,9 +357,9 @@ Realistic_Police.JobEditRecord = { -- Which job can create / edit Criminal Recor
 
 Realistic_Police.PlayerWanted = true -- if the player is wanted when he doesn't pay the fine 
 
-Realistic_Police.PourcentPay = 50 -- The amount pourcent which are give when the player pay the fine 
+Realistic_Police.PourcentPay = 30 -- The amount pourcent which are give when the player pay the fine 
 
-Realistic_Police.MaxPenalty = 20 -- Maxe Penalty on the same player 
+Realistic_Police.MaxPenalty = 60 -- Maxe Penalty on the same player 
 
 Realistic_Police.JobCanAddFine = { -- Which job can add fine
     ["SRT"] = true,
@@ -782,7 +772,8 @@ Realistic_Police.ResolveHack = 120 -- Time which the computer will be repair
 Realistic_Police.WordCount = 10 -- How many word the people have to write for hack the computer
 
 Realistic_Police.HackerJob = { -- Which are not able to use the computer without hack the computer 
-    ["Citoyen"] = true,  
+    ["Citoyen"] = false,  
+    -- Add hacker job 
 }
 
 Realistic_Police.WordHack = { -- Random Word for hack the computer 
