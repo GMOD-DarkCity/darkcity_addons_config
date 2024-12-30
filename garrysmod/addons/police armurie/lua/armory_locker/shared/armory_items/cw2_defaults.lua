@@ -1,3 +1,184 @@
+
+CH_Armory_Locker.AddItem( {
+	Name = "9mm Ammo",
+	Description = "/",
+	
+	Class = "tfa_ammo_pistol",
+	Model = "models/Items/BoxSRounds.mdl",
+	Type = "weapon",
+	
+	AmmoType = "tfa_ammo_pistol",
+	AmmoAmt = 0,
+
+	TeamRestricted = true,
+	AllowedTeams = {
+		["Deputy Trainee"] = true,
+		["Deputy Sheriff"] = true,
+		["SRT"] = true,
+		["SCU"] = true,
+	},
+	
+	MRSRestricted = false,
+	MRSRanks = {
+		["Chief of Department"] = true,
+		["Bureau Chief"] = true,
+		["Assistant Chief"] = true,
+		["Deputy Inspector"] = true,
+		["Deputy Chief"] = true,
+		["Captain"] = true,
+		["Lieutenant"] = true,
+		["Sergeant II"] = true,
+		["Sergeant"] = true,
+		["Officer III+1"] = true,
+		["Officer III"] = true,
+		["Officer II"] = true,
+		["Officer I"] = true,
+		["Police Officer"] = true,
+		["Probationary Police Officer"] = true,
+		["SCU"] = true,
+	},
+	
+	RankRestricted = false,
+	AllowedUsergroups = {
+		["user"] = true,
+	},
+} )
+
+CH_Armory_Locker.AddItem( {
+	Name = F.A.P. Ammo",
+	Description = "/",
+	
+	Class = "tfa_ammo_buckshot",
+	Model = "models/Items/BoxBuckshot.mdl",
+	Type = "weapon",
+	
+	AmmoType = "tfa_ammo_buckshot",
+	AmmoAmt = 0,
+
+	TeamRestricted = true,
+	AllowedTeams = {
+		["Deputy Trainee"] = true,
+		["Deputy Sheriff"] = true,
+		["SRT"] = true,
+		["SCU"] = true,
+	},
+	
+	MRSRestricted = false,
+	MRSRanks = {
+		["Chief of Department"] = true,
+		["Bureau Chief"] = true,
+		["Assistant Chief"] = true,
+		["Deputy Inspector"] = true,
+		["Deputy Chief"] = true,
+		["Captain"] = true,
+		["Lieutenant"] = true,
+		["Sergeant II"] = true,
+		["Sergeant"] = true,
+		["Officer III+1"] = true,
+		["Officer III"] = true,
+		["Officer II"] = true,
+		["Officer I"] = true,
+		["Police Officer"] = true,
+		["Probationary Police Officer"] = true,
+		["SCU"] = true,
+	},
+	
+	RankRestricted = false,
+	AllowedUsergroups = {
+		["user"] = true,
+	},
+} )
+
+CH_Armory_Locker.AddItem( {
+	Name = Pistolet Mitrailleur Ammo",
+	Description = "/",
+	
+	Class = "tfa_ammo_smg",
+	Model = "models/Items/BoxSRounds.mdl",
+	Type = "weapon",
+	
+	AmmoType = "models/Items/BoxSRounds.mdl",
+	AmmoAmt = 0,
+
+	TeamRestricted = true,
+	AllowedTeams = {
+		["Deputy Trainee"] = true,
+		["Deputy Sheriff"] = true,
+		["SRT"] = true,
+		["SCU"] = true,
+	},
+	
+	MRSRestricted = false,
+	MRSRanks = {
+		["Chief of Department"] = true,
+		["Bureau Chief"] = true,
+		["Assistant Chief"] = true,
+		["Deputy Inspector"] = true,
+		["Deputy Chief"] = true,
+		["Captain"] = true,
+		["Lieutenant"] = true,
+		["Sergeant II"] = true,
+		["Sergeant"] = true,
+		["Officer III+1"] = true,
+		["Officer III"] = true,
+		["Officer II"] = true,
+		["Officer I"] = true,
+		["Police Officer"] = true,
+		["Probationary Police Officer"] = true,
+		["SCU"] = true,
+	},
+	
+	RankRestricted = false,
+	AllowedUsergroups = {
+		["user"] = true,
+	},
+} )
+
+CH_Armory_Locker.AddItem( {
+	Name = "Sniper Ammo",
+	Description = "/",
+	
+	Class = "tfa_ammo_sniper_rounds",
+	Model = "models/items/sniper_round_box.mdl",
+	Type = "weapon",
+	
+	AmmoType = "tfa_ammo_sniper_rounds",
+	AmmoAmt = 0,
+
+	TeamRestricted = true,
+	AllowedTeams = {
+		["Deputy Trainee"] = true,
+		["Deputy Sheriff"] = true,
+		["SRT"] = true,
+		["SCU"] = true,
+	},
+	
+	MRSRestricted = false,
+	MRSRanks = {
+		["Chief of Department"] = true,
+		["Bureau Chief"] = true,
+		["Assistant Chief"] = true,
+		["Deputy Inspector"] = true,
+		["Deputy Chief"] = true,
+		["Captain"] = true,
+		["Lieutenant"] = true,
+		["Sergeant II"] = true,
+		["Sergeant"] = true,
+		["Officer III+1"] = true,
+		["Officer III"] = true,
+		["Officer II"] = true,
+		["Officer I"] = true,
+		["Police Officer"] = true,
+		["Probationary Police Officer"] = true,
+		["SCU"] = true,
+	},
+	
+	RankRestricted = false,
+	AllowedUsergroups = {
+		["user"] = true,
+	},
+} )
+
 CH_Armory_Locker.AddItem( {
 	Name = "Glock 17",
 	Description = "/",
