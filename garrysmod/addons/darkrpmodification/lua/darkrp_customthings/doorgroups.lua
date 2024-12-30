@@ -19,4 +19,11 @@ AddDoorGroup("NAME OF THE GROUP HERE, you will see this when looking at a door",
     https://yourdevtools.com/gmod/darkrp-doorgroup
 --]]
 
-DarkRP.createEntityGroup("hôpital ", TEAM_Ambulancier, TEAM_Medecin, TEAM_Docteur)
+
+-- Door groups
+AddDoorGroup("Police", TEAM_DEPUTY,TEAM_SRT,TEAM_SCU,TEAM_TRAINEE)
+AddDoorGroup("Tribunal", TEAM_DEPUTY,TEAM_SRT,TEAM_SCU,TEAM_JUGE,TEAM_TRAINEE)
+AddDoorGroup("Banque", TEAM_DEPUTY,TEAM_SRT,TEAM_SCU,TEAM_BANQUIER,TEAM_TRAINEE,TEAM_CONVOYEUR)
+AddDoorGroup("Mairie", TEAM_DEPUTY,TEAM_SRT,TEAM_SCU,TEAM_GOUVERNEUR,TEAM_GARDEDUMAIRE,TEAM_TRAINEE)
+AddDoorGroup("Pompier", TEAM_DEPUTY,TEAM_SRT,TEAM_SCU,TEAM_TRAINEE,TEAM_POMPIER)
+AddDoorGroup("Hopital", TEAM_DEPUTY,TEAM_SRT,TEAM_SCU,TEAM_TRAINEE,TEAM_MEDIC,TEAM_DOCTEUR)

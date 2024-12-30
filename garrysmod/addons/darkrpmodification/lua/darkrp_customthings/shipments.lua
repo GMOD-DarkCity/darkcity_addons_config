@@ -1,59 +1,7 @@
-DarkRP.createCategory{
-    name = "Fusils d'assaut",
-    categorises = "shipments",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = fp{fn.Id, true},
-    sortOrder = 104,
-}
 
-DarkRP.createCategory{
-    name = "Fusils à pompe",
-    categorises = "shipments",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = fp{fn.Id, true},
-    sortOrder = 103,
-}
-
-DarkRP.createCategory{
-    name = "Pistolets Mitrailleur",
-    categorises = "shipments",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = fp{fn.Id, true},
-    sortOrder = 102,
-}
-
-DarkRP.createCategory{
-    name = "Fusils de précision",
-    categorises = "shipments",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = fp{fn.Id, true},
-    sortOrder = 105,
-}
-
-DarkRP.createCategory{
-    name = "Pistolets",
-    categorises = "shipments",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = fp{fn.Id, true},
-    sortOrder = 101,
-}
-
-DarkRP.createCategory{
-    name = "Armes Blanche",
-    categorises = "shipments",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = fp{fn.Id, true},
-    sortOrder = 101,
-}
-    -------------------------------------------------------------------------------
-    -- Fusil d'assaut
-    -------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- Fusil d'assaut
+-------------------------------------------------------------------------------
 DarkRP.createShipment("Ar-15", {
     entity = "tfa_ins2_cw_ar15",
     model = "models/weapons/tfa_ins2/w_cw_ar15.mdl",
@@ -489,9 +437,9 @@ DarkRP.createShipment("FNP-45", {
         return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
     end,
 })
-    -------------------------------------------------------------------------------
-    -- Fusils de précision
-    -------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- Fusils de précision
+-------------------------------------------------------------------------------
 
 DarkRP.createShipment("Accury Internationnal AWM", {
     entity = "amodels/weapons/w_ins2_warface_awm.mdl",
@@ -537,9 +485,9 @@ DarkRP.createShipment("Barett M98B", {
         return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
     end,
 })
-    ----------------------------------------------------------------------------
-    -- Fusil Ã pompe
-    -------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+-- Fusil Ã pompe
+-------------------------------------------------------------------------------
 DarkRP.createShipment("Remington M870", {
     entity = "tfa_ins2_remington_m870",
     model = "models/weapons/smc/r870/w_remington_m870.mdl",
@@ -554,7 +502,6 @@ DarkRP.createShipment("Remington M870", {
         return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
     end,
 })
-
 DarkRP.createShipment("Nova", {
     entity = "tfa_ins2_nova",
     model = "models/weapons/tfa_ins2/w_nova.mdl",
@@ -569,406 +516,23 @@ DarkRP.createShipment("Nova", {
         return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
     end,
 })
-/*
-
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_ks23",
-    model = "models/weapons/fas2/world/shotguns/ks23.mdl",
-    amount = 1,
-    price = 190000,
-    pricesep = 19000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-        return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-})
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_ks23k",
-    model = "models/weapons/fas2/world/shotguns/ks23k.mdl",
-    amount = 1,
-    price = 190000,
-    pricesep = 19000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-        return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-})
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_m3s90",
-    model = "models/weapons/fas2/world/shotguns/m3s90.mdl",
-    amount = 1,
-    price = 200000,
-    pricesep = 20000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-        return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-})
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_mossbergm88c",
-    model = "models/weapons/fas2/world/shotguns/mossbergm88c.mdl",
-    amount = 1,
-    price = 180000,
-    pricesep = 18000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-        return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-})
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_mp153",
-    model = "models/weapons/fas2/world/shotguns/mp153.mdl",
-    amount = 1,
-    price = 230000,
-    pricesep = 23000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-        return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-})
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_rem870",
-    model = "models/weapons/fas2/world/shotguns/remington870.mdl",
-    amount = 10,
-    price = 170000,
-    pricesep = 17000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-        return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-})
-
-DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_rem870_tact",
-    model = "models/weapons/fas2/world/shotguns/remington870_tact.mdl",
-    amount = 10,
-    price = 190000,
-    pricesep = 19000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_saiga12k",
-    model = "models/weapons/fas2/world/shotguns/saiga12k.mdl",
-    amount = 10,
-    price = 240000,
-    pricesep = 24000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_shorty",
-    model = "models/weapons/fas2/world/shotguns/shorty.mdl",
+DarkRP.createShipment("Molotov", {
+    entity = "fire_molotov",
+    model = "models/craphead_scripts/ocrp2/props_meow/weapons/w_molotov.mdl",
     amount = 10,
     price = 100000,
     pricesep = 10000,
     noship = false,
     separate = true,
-    category = "Fusil Ã pompe",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_toz34",
-    model = "models/weapons/fas2/world/shotguns/toz34.mdl",
-    amount = 10,
-    price = 150000,
-    pricesep = 15000,
-    noship = false,
-    separate = true,
-    category = "Fusil Ã pompe",
+    category = "Objets Illégaux",
     allowed = {TEAM_MARCHANDNOIRE},
     customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
+        return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
     end,
-    })
-    -------------------------------------------------------------------------------
-    -- Pistolets Mitrailleur
-    -------------------------------------------------------------------------------
-    DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_p90",
-    model = "models/weapons/fas2/world/smgs/p90.mdl",
-    amount = 10,
-    price = 225000,
-    pricesep = 22500,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("/", {
-    entity = "arccw_firearms2_vector",
-    model = "models/weapons/fas2/world/smgs/vector.mdl",
-    amount = 10,
-    price = 250000,
-    pricesep = 25000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("LR-300", {
-    entity = "arccw_firearms2_lr300",
-    model = "models/weapons/fas2/world/rifles/lr300.mdl",
-    amount = 10,
-    price = 240000,
-    pricesep = 24000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("MAC-11", {
-    entity = "arccw_firearms2_mac11",
-    model = "models/weapons/fas2/world/smgs/mac11.mdl",
-    amount = 10,
-    price = 120000,
-    pricesep = 12000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("MP5A5", {
-    entity = "arccw_firearms2_mp5a5",
-    model = "models/weapons/fas2/world/smgs/mp5a5.mdl",
-    amount = 10,
-    price = 170000,
-    pricesep = 17000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("MP5K", {
-    entity = "arccw_firearms2_mp5k",
-    model = "models/weapons/fas2/world/smgs/mp5k.mdl",
-    amount = 10,
-    price = 150000,
-    pricesep = 15000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("MP5SD6", {
-    entity = "arccw_firearms2_mp5sd6",
-    model = "models/weapons/fas2/world/smgs/mp5sd6.mdl",
-    amount = 10,
-    price = 175000,
-    pricesep = 17500,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("MP9", {
-    entity = "arccw_firearms2_mp9",
-    model = "models/weapons/fas2/world/smgs/mp9.mdl",
-    amount = 10,
-    price = 140000,
-    pricesep = 14000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("PP-19 Bizon", {
-    entity = "arccw_firearms2_pp19",
-    model = "models/weapons/fas2/world/smgs/bizon.mdl",
-    amount = 10,
-    price = 230000,
-    pricesep = 23000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("Sterling L2A3", {
-    entity = "arccw_firearms2_sterling_l2a3",
-    model = "models/weapons/fas2/world/smgs/bizon.mdl",
-    amount = 10,
-    price = 190000,
-    pricesep = 19000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("Sterling L34A1", {
-    entity = "arccw_firearms2_sterling_l34a1",
-    model = "models/weapons/fas2/world/smgs/bizon.mdl",
-    amount = 10,
-    price = 175000,
-    pricesep = 17500,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("Sterling MK7A4", {
-    entity = "arccw_firearms2_sterling_mk7a4",
-    model = "models/weapons/fas2/world/smgs/bizon.mdl",
-    amount = 10,
-    price = 180000,
-    pricesep = 18000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("Ump45", {
-    entity = "arccw_firearms2_ump45",
-    model = "models/weapons/fas2/world/smgs/ump45.mdl",
-    amount = 10,
-    price = 225000,
-    pricesep = 22500,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("UZI", {
-    entity = "arccw_firearms2_uzi",
-    model = "models/weapons/fas2/world/smgs/uzi.mdl",
-    amount = 10,
-    price = 160000,
-    pricesep = 16000,
-    noship = false,
-    separate = true,
-    category = "Pistolets Mitrailleur",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    -------------------------------------------------------------------------------
-    -- Armes Blanche
-    -------------------------------------------------------------------------------
-    DarkRP.createShipment("DV2", {
-    entity = "arccw_firearms2_dv2",
-    model = "models/weapons/fas2/world/melee/dv2.mdl",
-    amount = 10,
-    price = 5000,
-    pricesep = 500,
-    noship = false,
-    separate = true,
-    category = "Armes Blanche",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("M9 bayonet", {
-    entity = "arccw_firearms2_m9_bayonet",
-    model = "models/weapons/fas2/world/melee/m9.mdl",
-    amount = 10,
-    price = 5000,
-    pricesep = 500,
-    noship = false,
-    separate = true,
-    category = "Armes Blanche"",
-    allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_GUN, TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    DarkRP.createShipment("Machette", {
-    entity = "arccw_firearms2_machete",
-    model = "models/weapons/fas2/world/melee/machete.mdl",
-    amount = 10,
-    price = 10000,
-    pricesep = 1000,
-    noship = false,
-    separate = true,
-    category = "Armes Blanche"",
-    allowed = {TEAM_MARCHANDNOIRE},
-    customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-    end,
-    })
-    */
-    -----------------------------------------------------------------------------------------
-    -- Illegale
-    -----------------------------------------------------------------------------------------
-    --[[DarkRP.createShipment("Téléphone", {
-    entity = "advancedrobbery_cellphone",
-    model = "models/sterling/ajr_phone_w.mdl",
+})
+DarkRP.createShipment("Lockpick", {
+    entity = "lockpick",
+    model = "models/weapons/w_crowbar.mdl",
     amount = 10,
     price = 10000,
     pricesep = 1000,
@@ -977,64 +541,35 @@ DarkRP.createShipment("/", {
     category = "Objets Illégaux",
     allowed = {TEAM_MARCHANDNOIRE},
     customCheck = function(ply)
-    return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
+        return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
     end,
-    })]]--
-    
-    DarkRP.createShipment("Molotov", {
-        entity = "fire_molotov",
-        model = "models/craphead_scripts/ocrp2/props_meow/weapons/w_molotov.mdl",
-        amount = 10,
-        price = 100000,
-        pricesep = 10000,
-        noship = false,
-        separate = true,
-        category = "Objets Illégaux",
-        allowed = {TEAM_MARCHANDNOIRE},
-        customCheck = function(ply)
-            return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-        end,
-    })
-    DarkRP.createShipment("Lockpick", {
-        entity = "lockpick",
-        model = "models/weapons/w_crowbar.mdl",
-        amount = 10,
-        price = 10000,
-        pricesep = 1000,
-        noship = false,
-        separate = true,
-        category = "Objets Illégaux",
-        allowed = {TEAM_MARCHANDNOIRE},
-        customCheck = function(ply)
-            return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-        end,
-    })
+})
 
-    DarkRP.createShipment("Keypad cracker", {
-        entity = "keypad_cracker",
-        model = "models/weapons/w_c4.mdl",
-        amount = 10,
-        price = 10000,
-        pricesep = 1000,
-        noship = false,
-        separate = true,
-        category = "Objets Illégaux",
-        allowed = {TEAM_MARCHANDNOIRE},
-        customCheck = function(ply)
-            return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-        end,
-    })
-    DarkRP.createShipment("serflex", {
-        entity = "weapon_r_restrains",
-        model = "models/tobadforyou/flexcuffs_deployed.mdl",
-        amount = 10,
-        price = 10000,
-        pricesep = 1000,
-        noship = false,
-        separate = true,
-        category = "Objets Illégaux",
-        allowed = {TEAM_MARCHANDNOIRE},
-        customCheck = function(ply)
-            return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
-        end,
-    })
+DarkRP.createShipment("Keypad cracker", {
+    entity = "keypad_cracker",
+    model = "models/weapons/w_c4.mdl",
+    amount = 10,
+    price = 10000,
+    pricesep = 1000,
+    noship = false,
+    separate = true,
+    category = "Objets Illégaux",
+    allowed = {TEAM_MARCHANDNOIRE},
+    customCheck = function(ply)
+        return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
+    end,
+})
+DarkRP.createShipment("serflex", {
+    entity = "weapon_r_restrains",
+    model = "models/tobadforyou/flexcuffs_deployed.mdl",
+    amount = 10,
+    price = 10000,
+    pricesep = 1000,
+    noship = false,
+    separate = true,
+    category = "Objets Illégaux",
+    allowed = {TEAM_MARCHANDNOIRE},
+    customCheck = function(ply)
+        return table.HasValue({TEAM_MARCHANDNOIRE}, ply:Team())
+    end,
+})

@@ -31,24 +31,9 @@ DarkRP.createEntity("Radio", {
 })
 
 ---------------------------------------------------------------------
---                   Medecin
----------------------------------------------------------------------
-/*
-
-
-DarkRP.createEntity("Medicament", {
-	ent = "arccw_firearms2_ammo_medical_supplies",
-	model = "models/weapons/fas2/world/misc/ifak.mdl",
-	price = 100,
-	max = 1,
-	cmd = "arccw_firearms2_ammo_medical_supplies",
-	allowed = {TEAM_RADIO},
-})
-*/
----------------------------------------------------------------------
 --                   Animateur radio
 ---------------------------------------------------------------------
-DarkRP.createEntity("Radio", {
+DarkRP.createEntity("Serveur Radio", {
 	ent = "numerix_radio_server",
 	model = "models/props_lab/servers.mdl",
 	price = 100,
@@ -61,68 +46,68 @@ DarkRP.createEntity("Radio", {
 --                   FireWork
 ---------------------------------------------------------------------
 
-DarkRP.createEntity("Firework Maker", {
+DarkRP.createEntity("Convoyeur", {
     ent = "zcm_crackermachine",
     model = "models/zerochain/props_crackermaker/zcm_base.mdl",
     price = 5000,
     max = 1,
     cmd = "buyzcm_crackermachine",
     allowed = {TEAM_FIREWORK},
-    category = "Illegal Firework Maker"
+    category = "Fabricant de feux d'artifice"
 })
 
-DarkRP.createEntity("BlackPowder", {
+DarkRP.createEntity("Poudre Noir", {
     ent = "zcm_blackpowder",
     model = "models/zerochain/props_crackermaker/zcm_blackpowder.mdl",
     price = 100,
     max = 3,
     cmd = "buyzcm_blackpowder",
     allowed = {TEAM_FIREWORK},
-    category = "Illegal Firework Maker"
+    category = "Fabricant de feux d'artifice"
 })
 
-DarkRP.createEntity("Paper", {
+DarkRP.createEntity("Papier", {
     ent = "zcm_paperroll",
     model = "models/zerochain/props_crackermaker/zcm_paper.mdl",
     price = 100,
     max = 3,
     cmd = "buyzcm_paperroll",
     allowed = {TEAM_FIREWORK},
-    category = "Illegal Firework Maker"
+    category = "Fabricant de feux d'artifice"
 })
 
-DarkRP.createEntity("Box", {
+DarkRP.createEntity("Boite", {
     ent = "zcm_box",
     model = "models/zerochain/props_crackermaker/zcm_box.mdl",
     price = 10,
     max = 3,
     cmd = "buyzcm_box",
     allowed = {TEAM_FIREWORK},
-    category = "Illegal Firework Maker"
+    category = "Fabricant de feux d'artifice"
 })
 
-DarkRP.createEntity("Pallet", {
+DarkRP.createEntity("Palette", {
     ent = "zcm_palette",
     model = "models/props_junk/wood_pallet001a.mdl",
     price = 100,
     max = 2,
     cmd = "buyzcm_palette",
     allowed = {TEAM_FIREWORK},
-    category = "Illegal Firework Maker"
+    category = "Fabricant de feux d'artifice"
 })
 
 ------------------------------------------------------------------------
 --                              Car Dealer
 ------------------------------------------------------------------------
 
-DarkRP.createEntity("Showcase", {
+DarkRP.createEntity("Vitrine", {
 	ent = "rcd_showcase",
 	model = "models/dimitri/kobralost/stand.mdl",
 	price = 500,
 	max = 2,
 	cmd = "rcd_showcase",
 	allowed = {TEAM_CARDEALER},
-    category = "Cardealer Job",
+    category = "Concessionnaire",
 })
 
 
@@ -130,31 +115,31 @@ DarkRP.createEntity("Showcase", {
 --                              Meth Lab 2
 ------------------------------------------------------------------------
 
-DarkRP.createEntity("Tent Kit", {
+DarkRP.createEntity("Kit tente", {
 	ent = "zmlab2_tent",
 	model = "models/zerochain/props_methlab/zmlab2_tentkit.mdl",
 	price = 1000,
 	max = 1,
 	cmd = "buytent",
 	allowed = {TEAM_METH},
-	category = "MethCook",
+	category = "Fabrication de Meth",
 })
 
-DarkRP.createEntity("Equipment Crate", {
+DarkRP.createEntity("Caisse d'équipement", {
 	ent = "zmlab2_equipment",
 	model = "models/zerochain/props_methlab/zmlab2_chest.mdl",
 	price = 1000,
 	max = 1,
 	cmd = "buyequipment",
 	allowed = {TEAM_METH},
-	category = "MethCook"
+	category = "Fabrication de Meth"
 })
 
 ------------------------------------------------------------------------
 --                             Cook
 ------------------------------------------------------------------------
 
-DarkRP.createEntity("Gastank", {
+DarkRP.createEntity("Bouteille de gaz", {
 	ent = "zmc_gastank",
 	model = "models/zerochain/props_kitchen/zmc_gastank.mdl",
 	price = 500,
@@ -162,7 +147,7 @@ DarkRP.createEntity("Gastank", {
 	cmd = "buyzmcgastank",
 	allowTools = true,
 	allowed = TEAM_COOK,
-	category = "Cook"
+	category = "Cuisinier"
 })
 
 DarkRP.createEntity("Kit de construction", {
@@ -173,7 +158,7 @@ DarkRP.createEntity("Kit de construction", {
 	cmd = "buyzmc_buildkit",
 	allowTools = true,
 	allowed = TEAM_COOK,
-	category = "Cook"
+	category = "Cuisinier"
 })
 
 DarkRP.createEntity("Livre de recettes", {
@@ -184,7 +169,7 @@ DarkRP.createEntity("Livre de recettes", {
 	cmd = "buyzmc_cookbook",
 	allowTools = true,
 	allowed = TEAM_COOK,
-	category = "Cook"
+	category = "Cuisinier"
 })
 
 ------------------------------------------------------------------------
@@ -260,7 +245,7 @@ DarkRP.createEntity("Roue", {
 ------------------------------------------------------------------------
 --                              BITMINER
 ------------------------------------------------------------------------
-/*
+
 
 DarkRP.createEntity("Câble d'alimentation", {
         ent = "ch_bitminer_power_cable",
@@ -421,231 +406,228 @@ DarkRP.createEntity("Câble d'alimentation", {
         cmd = "buydirtcleanfluid",
 	allowed = {TEAM_BITMINEUR}
     })
-*/
+
 ------------------------------------------------------------------------
 --                           Ammo
 ------------------------------------------------------------------------
-DarkRP.createCategory{
-    name = "Munitions",
-    categorises = "entities",
-    startExpanded = true,
-    color = Color(35,85,105,255),
-    canSee = function(ply) return true end,
-    sortOrder = 104
-}
 
-DarkRP.createEntity("357 Magnum", {
-    ent = "arccw_firearms2_ammo_357magnum",
-    model = "models/ammo/fas2/357magnum.mdl",
-    price = 50,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_357magnum",
-})
-DarkRP.createEntity("45ACP", {
-    ent = "arccw_firearms2_ammo_45acp",
-    model = "models/ammo/fas2/45cal.mdl",
-    price = 50,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_45acp",
-})
-DarkRP.createEntity("338lapua", {
-    ent = "arccw_firearms2_ammo_338lapua",
-    model = "models/ammo/fas2/338lapua.mdl",
-    price = 50,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_338lapua",
-})
-DarkRP.createEntity("45ACP HS", {
-    ent = "arccw_firearms2_ammo_45acphs",
-    model = "models/ammo/fas2/45cal_ap.mdl",
-    price = 50,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_45acphs",
-})
-DarkRP.createEntity("454casull", {
-    ent = "arccw_firearms2_ammo_454casull",
-    model = "models/ammo/fas2/454casull.mdl",
-    price = 50,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_454casull",
-})
-DarkRP.createEntity("50ae", {
-    ent = "arccw_firearms2_ammo_50ae",
-    model = "models/ammo/fas2/50ae.mdl",
-    price = 150,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_50ae",
-})
-DarkRP.createEntity("50cal_bmg", {
-    ent = "arccw_firearms2_ammo_50bmg",
-    model = "models/ammo/fas2/50cal_bmg.mdl",
-    price = 150,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_50bmg",
-}) 
-DarkRP.createEntity("12x70", {
-    ent = "arccw_firearms2_ammo_12gauge",
-    model = "models/ammo/fas2/12x70.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_12gauge",
-})
-DarkRP.createEntity("12x76_slug", {
-    ent = "arccw_firearms2_ammo_12gauge_slug",
-    model = "models/ammo/fas2/12x76_slug.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_12gauge_slug",
-})
-DarkRP.createEntity("127x55", {
-    ent = "arccw_firearms2_ammo_127x55",
-    model = "models/ammo/fas2/127x55.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_127x55",
-}) 
-DarkRP.createEntity("23x75mm", {
-    ent = "arccw_firearms2_ammo_23x75",
-    model = "models/ammo/fas2/23mm.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_23x75",
-})
-DarkRP.createEntity("5.45x39 MM", {
-    ent = "arccw_firearms2_ammo_545x39",
-    model = "models/ammo/fas2/545x39.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_545x39",
-})
-DarkRP.createEntity("5.56x45MM", {
-    ent = "arccw_firearms2_ammo_556x45",
-    model = "models/ammo/fas2/556x45.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_556x45",
-})
-DarkRP.createEntity("5.7x28MM", {
-    ent = "arccw_firearms2_ammo_57x28",
-    model = "models/ammo/fas2/57x28.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_57x28",
-})
-DarkRP.createEntity("7.62x39MM", {
-    ent = "arccw_firearms2_ammo_762x39",
-    model = "models/ammo/fas2/762x39.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_762x39",
-})
-DarkRP.createEntity("7.62x51MM", {
-    ent = "arccw_firearms2_ammo_762x51",
-    model = "models/ammo/fas2/762x51.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_762x51",
-})
-DarkRP.createEntity("7.62x54MM", {
-    ent = "arccw_firearms2_ammo_762x54",
-    model = "models/ammo/fas2/762x54.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_762x54",
-})
-DarkRP.createEntity("7.62x54_sp", {
-    ent = "arccw_firearms2_ammo_762x54_sp",
-    model = "models/ammo/fas2/762x54_sp.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_762x54_sp",
-})
-DarkRP.createEntity("9x18MM", {
-    ent = "arccw_firearms2_ammo_9x18",
-    model = "models/ammo/fas2/9x18.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_9x18",
-})
-DarkRP.createEntity("9x19MM", {
-    ent = "arccw_firearms2_ammo_9x19",
-    model = "models/ammo/fas2/9x19.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_9x19",
-})
-DarkRP.createEntity("9x39MM", {
-    ent = "arccw_firearms2_ammo_9x39",
-    model = "models/ammo/fas2/9x39.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_9x39",
-})
-DarkRP.createEntity("9x39_sp", {
-    ent = "arccw_firearms2_ammo_9x39sp",
-    model = "models/ammo/fas2/9x39_sp.mdl",
-    price = 100,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammo_9x39sp",
-})
-DarkRP.createEntity("ammocrate", {
-    ent = "arccw_firearms2_ammocrate",
-    model = "models/ammo/fas2/ammocrate.mdl",
-    price = 5000,
-    max = 5,
-    category = "Munitions",
- 	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
-    cmd = "arccw_firearms2_ammocrate",
-})
+/*
+
+    DarkRP.createEntity("357 Magnum", {
+        ent = "arccw_firearms2_ammo_357magnum",
+        model = "models/ammo/fas2/357magnum.mdl",
+        price = 50,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_357magnum",
+    })
+    DarkRP.createEntity("45ACP", {
+        ent = "arccw_firearms2_ammo_45acp",
+        model = "models/ammo/fas2/45cal.mdl",
+        price = 50,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_45acp",
+    })
+    DarkRP.createEntity("338lapua", {
+        ent = "arccw_firearms2_ammo_338lapua",
+        model = "models/ammo/fas2/338lapua.mdl",
+        price = 50,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_338lapua",
+    })
+    DarkRP.createEntity("45ACP HS", {
+        ent = "arccw_firearms2_ammo_45acphs",
+        model = "models/ammo/fas2/45cal_ap.mdl",
+        price = 50,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_45acphs",
+    })
+    DarkRP.createEntity("454casull", {
+        ent = "arccw_firearms2_ammo_454casull",
+        model = "models/ammo/fas2/454casull.mdl",
+        price = 50,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_454casull",
+    })
+    DarkRP.createEntity("50ae", {
+        ent = "arccw_firearms2_ammo_50ae",
+        model = "models/ammo/fas2/50ae.mdl",
+        price = 150,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_50ae",
+    })
+    DarkRP.createEntity("50cal_bmg", {
+        ent = "arccw_firearms2_ammo_50bmg",
+        model = "models/ammo/fas2/50cal_bmg.mdl",
+        price = 150,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_50bmg",
+    }) 
+    DarkRP.createEntity("12x70", {
+        ent = "arccw_firearms2_ammo_12gauge",
+        model = "models/ammo/fas2/12x70.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_12gauge",
+    })
+    DarkRP.createEntity("12x76_slug", {
+        ent = "arccw_firearms2_ammo_12gauge_slug",
+        model = "models/ammo/fas2/12x76_slug.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_12gauge_slug",
+    })
+    DarkRP.createEntity("127x55", {
+        ent = "arccw_firearms2_ammo_127x55",
+        model = "models/ammo/fas2/127x55.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_127x55",
+    }) 
+    DarkRP.createEntity("23x75mm", {
+        ent = "arccw_firearms2_ammo_23x75",
+        model = "models/ammo/fas2/23mm.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_23x75",
+    })
+    DarkRP.createEntity("5.45x39 MM", {
+        ent = "arccw_firearms2_ammo_545x39",
+        model = "models/ammo/fas2/545x39.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_545x39",
+    })
+    DarkRP.createEntity("5.56x45MM", {
+        ent = "arccw_firearms2_ammo_556x45",
+        model = "models/ammo/fas2/556x45.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_556x45",
+    })
+    DarkRP.createEntity("5.7x28MM", {
+        ent = "arccw_firearms2_ammo_57x28",
+        model = "models/ammo/fas2/57x28.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_57x28",
+    })
+    DarkRP.createEntity("7.62x39MM", {
+        ent = "arccw_firearms2_ammo_762x39",
+        model = "models/ammo/fas2/762x39.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_762x39",
+    })
+    DarkRP.createEntity("7.62x51MM", {
+        ent = "arccw_firearms2_ammo_762x51",
+        model = "models/ammo/fas2/762x51.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_762x51",
+    })
+    DarkRP.createEntity("7.62x54MM", {
+        ent = "arccw_firearms2_ammo_762x54",
+        model = "models/ammo/fas2/762x54.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_762x54",
+    })
+    DarkRP.createEntity("7.62x54_sp", {
+        ent = "arccw_firearms2_ammo_762x54_sp",
+        model = "models/ammo/fas2/762x54_sp.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_762x54_sp",
+    })
+    DarkRP.createEntity("9x18MM", {
+        ent = "arccw_firearms2_ammo_9x18",
+        model = "models/ammo/fas2/9x18.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_9x18",
+    })
+    DarkRP.createEntity("9x19MM", {
+        ent = "arccw_firearms2_ammo_9x19",
+        model = "models/ammo/fas2/9x19.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_9x19",
+    })
+    DarkRP.createEntity("9x39MM", {
+        ent = "arccw_firearms2_ammo_9x39",
+        model = "models/ammo/fas2/9x39.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_9x39",
+    })
+    DarkRP.createEntity("9x39_sp", {
+        ent = "arccw_firearms2_ammo_9x39sp",
+        model = "models/ammo/fas2/9x39_sp.mdl",
+        price = 100,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammo_9x39sp",
+    })
+    DarkRP.createEntity("ammocrate", {
+        ent = "arccw_firearms2_ammocrate",
+        model = "models/ammo/fas2/ammocrate.mdl",
+        price = 5000,
+        max = 5,
+        category = "Munitions",
+        allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
+        cmd = "arccw_firearms2_ammocrate",
+    })
+
+    
+*/
 ------------------------------------------------------------------------
 --                              KEVLAR
 ------------------------------------------------------------------------
 
-DarkRP.createEntity("Moyen Kevlar", {
+DarkRP.createEntity("Kevlar Moyen", {
 	ent = "medium_kevlar",
 	model = "models/snowzgmod/payday2/armour/armourvest.mdl",
 	price = 3000,
@@ -664,172 +646,16 @@ DarkRP.createEntity("Petit Kevlar", {
  	 allowed = {TEAM_GUN,TEAM_MARCHANDNOIRE}, 
 })
 ------------------------------------------------------------------------
---                              Pharatien
-------------------------------------------------------------------------
-
-	DarkRP.createEntity("Guide Book", {
-		ent = "bp_guide_book",
-		model = "models/blues_pharm/book.mdl",
-		price = 250,
-		max = 1,
-		cmd = "bpbuyguide",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	}) 
-
-	--Six is the max amount in a single freezer, so match this to the number of freezers allowed
-	DarkRP.createEntity("Beaker", {
-		ent = "bp_beaker",
-		model = "models/blues_pharm/beaker.mdl",
-		price = 500,
-		max = 6,
-		cmd = "bpbuybeaker",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	}) 
-
-	DarkRP.createEntity("Bunsen Burner", {
-		ent = "bp_bunsen_burner",
-		model = "models/blues_pharm/bunsen_burner.mdl",
-		price = 5000,
-		max = 4,
-		cmd = "bpbuybunsenburner",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	}) 
-
-	DarkRP.createEntity("Freezer", {
-		ent = "bp_freezer",
-		model = "models/blues_pharm/freezer.mdl",
-		price = 20000,
-		max = 1,
-		cmd = "bpbuyfreezer",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	}) 
-
-	DarkRP.createEntity("Pill Press", {
-		ent = "bp_pill_press",
-		model = "models/blues_pharm/pill_presser.mdl",
-		price = 8000,
-		max = 2,
-		cmd = "bpbuypillpress",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	--Chemicals below
-	DarkRP.createEntity("Keto Acid", {
-		ent = "bp_chemical_keto_acid",
-		model = "models/blues_pharm/jar_1.mdl",
-		price = 750,
-		max = 2,
-		cmd = "bpbuyketoacid",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Propionic Acid", {
-		ent = "bp_chemical_prop_acid",
-		model = "models/blues_pharm/jar_2.mdl",
-		price = 750,
-		max = 2,
-		cmd = "bpbuypropacid",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-	
-	DarkRP.createEntity("Salicylic Acid", {
-		ent = "bp_chemical_sali_acid",
-		model = "models/blues_pharm/jar_2.mdl",
-		price = 500,
-		max = 2,
-		cmd = "bpbuysaliacid",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Methyltestosterone", {
-		ent = "bp_chemical_17alph",
-		model = "models/blues_pharm/jar_3.mdl",
-		price = 2000,
-		max = 2,
-		cmd = "bpbuymeth",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("2-Napththol", {
-		ent = "bp_chemical_2nap",
-		model = "models/blues_pharm/jar_3.mdl",
-		price = 1250,
-		max = 2,
-		cmd = "bpbuynapth",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Progestorone", {
-		ent = "bp_chemical_prog",
-		model = "models/blues_pharm/jar_3.mdl",
-		price = 3000,
-		max = 2,
-		cmd = "bpbuyprog",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Acetone", {
-		ent = "bp_chemical_acet2",
-		model = "models/blues_pharm/jar_3.mdl",
-		price = 750,
-		max = 2,
-		cmd = "bpbuyacet",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Acetic Anhydride", {
-		ent = "bp_chemical_acet",
-		model = "models/blues_pharm/jar_4.mdl",
-		price = 1000,
-		max = 2,
-		cmd = "bpbuyacet2",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Selenium Dioxide", {
-		ent = "bp_chemical_sele",
-		model = "models/blues_pharm/jar_4.mdl",
-		price = 2000,
-		max = 2,
-		cmd = "bpbuysele",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-	DarkRP.createEntity("Deionized Water", {
-		ent = "bp_chemical_deio",
-		model = "models/blues_pharm/jar_5.mdl",
-		price = 500,
-		max = 2,
-		cmd = "bpbuywater",
-		category = "Blue's Pharmaceuticals",
-		allowed = {TEAM_PHARMATIEN} 
-	})
-
-------------------------------------------------------------------------
 --                              Marchand noire
 ------------------------------------------------------------------------
---[[DarkRP.createEntity("Molotov", {
+DarkRP.createEntity("Molotov", {
 	ent = "fire_molotov",
 	model = "models/craphead_scripts/ocrp2/props_meow/weapons/w_molotov.mdl",
 	price = 1000,
 	max = 1,
 	cmd = "molotov",
 	category = "Objets Illégaux",
- 	 allowed = {TEAM_MARCHANDNOIRE}, 
+ 	allowed = {TEAM_MARCHANDNOIRE}, 
 })
 
 DarkRP.createEntity("Lockpick", {
@@ -839,7 +665,7 @@ DarkRP.createEntity("Lockpick", {
 	max = 1,
 	cmd = "lockpick",
 	category = "Objets Illégaux",
- 	 allowed = {TEAM_MARCHANDNOIRE}, 
+ 	allowed = {TEAM_MARCHANDNOIRE}, 
 })
 
 DarkRP.createEntity("Keypad cracker", {
@@ -849,8 +675,8 @@ DarkRP.createEntity("Keypad cracker", {
 	max = 1,
 	cmd = "keypadcracker",
 	category = "Objets Illégaux",
- 	 allowed = {TEAM_MARCHANDNOIRE}, 
-})]]--
+ 	allowed = {TEAM_MARCHANDNOIRE}, 
+})
 
 
 DarkRP.createEntity("Sac de braquage bijouterie", {
@@ -860,5 +686,5 @@ DarkRP.createEntity("Sac de braquage bijouterie", {
 	max = 1,
 	cmd = "advancedrobbery_robbery_bag_base",
 	category = "Objets Illégaux",
- 	 allowed = {TEAM_MARCHANDNOIRE}, 
+ 	allowed = {TEAM_MARCHANDNOIRE}, 
 })

@@ -20,6 +20,16 @@ DarkRP.createCategory{
 
 Add new categories under the next line!
 ---------------------------------------------------------------------------]]
+
+DarkRP.createCategory{
+    name = "Munitions",
+    categorises = "entities",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = function(ply) return true end,
+    sortOrder = 104
+}
+
 DarkRP.createCategory{
     name = "Citoyens",
     categorises = "jobs",
@@ -82,6 +92,23 @@ DarkRP.createCategory{
     canSee = fp{fn.Id, true},
     sortOrder = 105,
 }
+DarkRP.createCategory{
+    name = "Staff",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 106,
+}
+DarkRP.createCategory{
+    name = "Forces de l'Ordre",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 105,
+}
+
 
 
 ------------------------------------------------------------------------
@@ -125,7 +152,7 @@ DarkRP.createCategory{
 ------------------------------------------------------------------------
 
 DarkRP.createCategory{
-	name = "Cardealer Job", 
+	name = "Concessionnaire", 
 	categorises = "entities",
 	startExpanded = true,
     color = Color(35,85,105,255),	canSee = function(ply) return true end,
@@ -167,7 +194,7 @@ DarkRP.createCategory{
 }
 
 DarkRP.createCategory{
-	name = "Cook",
+	name = "Cuisinier",
 	categorises = "entities",
 	startExpanded = true,
     color = Color(35,85,105,255),
@@ -176,7 +203,7 @@ DarkRP.createCategory{
 }
 
 DarkRP.createCategory{
-	name = "MethCook",
+	name = "Fabrication de Meth",
 	categorises = "entities",
 	startExpanded = true,
     color = Color(35,85,105,255),
@@ -234,13 +261,67 @@ DarkRP.createCategory{
     sortOrder = 101,
 }
 
+DarkRP.createCategory{
+    name = "Fusils d'assaut",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 104,
+}
+
+DarkRP.createCategory{
+    name = "Fusils à pompe",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 103,
+}
+
+DarkRP.createCategory{
+    name = "Pistolets Mitrailleur",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 102,
+}
+
+DarkRP.createCategory{
+    name = "Fusils de précision",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 105,
+}
+
+DarkRP.createCategory{
+    name = "Pistolets",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 101,
+}
+
+DarkRP.createCategory{
+    name = "Armes Blanche",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(35,85,105,255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 101,
+}
+
 ------------------------------------------------------------------------
 --
 ------------------------------------------------------------------------
 
 
 DarkRP.createCategory{
-    name = "Illegal Firework Maker",
+    name = "Fabricant de feux d'artifice",
     categorises = "entities",
     startExpanded = true,
     color = Color(35,85,105,255),
